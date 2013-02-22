@@ -1,7 +1,8 @@
 class EvaluationsController < ApplicationController
- before_filter :values, :only => [:show, :edit, :update, :destroy]
+ #~ before_filter :values, :only => [:show, :edit, :update, :destroy]
 	def index
 		@evaluations=Evaluation.all
+		@values=Value.all
 	end
 	
 	def new
@@ -42,8 +43,8 @@ class EvaluationsController < ApplicationController
 	def first
 	end
 	
-	def values
-		@value=Evaluation.find(params[:id]).value.description
-	end
+	#~ def values
+		#~ @value=Evaluation.find(params[:id]).value.description
+	#~ end
 	
 end

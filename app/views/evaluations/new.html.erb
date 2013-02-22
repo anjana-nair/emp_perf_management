@@ -1,7 +1,7 @@
 <%= form_for (@evaluation) do |f| %>
 
-<%#= f.label :values %>
-<%#= select(:evaluation, :value_id, [['teamwork', 1], ['best effort in everything', 2],['team work and  individual contributions', 3], ['sense of urgency on any matters related to our customers', 4]]) %><br>
+<%= f.label :values %>
+<%= select(:evaluation, :value_id, [['teamwork', 1], ['best effort in everything', 2],['team work and  individual contributions', 3], ['sense of urgency on any matters related to our customers', 4]]) %><br>
 
 <%= f.label :Selfpoints %>
 <%= f.text_field :self_points%><br>
