@@ -1,0 +1,16 @@
+<%=@value%>
+<%= form_for (@evaluation) do |f| %>
+<%= f.label :Selfpoints %>
+<%= f.text_field :self_points%><br>
+
+<%= f.label :SelfComments %>
+<%= f.text_field :self_comments%><br>
+
+<%= f.label :ManagerPoints %>
+<%= f.text_field :manager_points%><br>
+
+<%= f.label :ManagerComments %>
+<%= f.text_field :manager_comments%><br>
+
+<%= f.submit "submit"%>
+<% end %>
