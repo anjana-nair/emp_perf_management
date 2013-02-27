@@ -2,10 +2,10 @@ class EvaluationsController < ApplicationController
  #~ before_filter :values, :only => [:show, :edit, :update, :destroy]
 	def index
 		@evaluations=Evaluation.all
-		@values=Value.all
 	end
 	
 	def new
+		@values=Value.all.map(&:description)
 		@evaluation=Evaluation.new
 	end
 	
